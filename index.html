@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <title>Data Lovers</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <header class="banner">
+    <img class="logo" src="pokedex.png">
+  </header>
+
+  <main>
+
+    <nav class="navegacion" id="navegacion">
+      <div id="buscadorPokeNombre">
+        <img class="searchIcon" id="searchIcon" src="https://img.icons8.com/material-outlined/24/000000/search--v1.png"
+          alt="imagen de busqueda" />
+
+        <input id="buscador" type="text" placeholder="Ingresa el nombre de tu pokemon">
+      </div>
+
+      <select id="menuDesplegable" class="colorBotones">
+        <option disabled selected>Selecciona un tipo</option>
+
+        <option value="electric">Electrico</option>
+        <option value="grass">Planta</option>
+        <option value="poison">Veneno</option>
+        <option value="fire">Fuego</option>
+        <option value="bug">Bicho</option>
+        <option value="normal">Normal</option>
+        <option value="fighting">Lucha</option>
+        <option value="psychic">Psiquico</option>
+        <option value="rock">Roca</option>
+        <option value="ground">Tierra</option>
+        <option value="flying">Volador</option>
+        <option value="water">Agua</option>
+        <option value="fairy">Hada</option>
+        <option value="dark">Siniestro</option>
+        <option value="ghost">Fantasma</option>
+        <option value="dragon">Dragón</option>
+        <option value="ice">Hielo</option>
+      </select>
+
+      <button id="az" class="colorBotones">Ordenar A-Z
+      </button>
+      <button id="za" class="colorBotones">Ordenar Z-A
+      </button>
+    </nav>
+
+    <!--POKEMONES EN PANTALLA-->
+
+    <section id="pokeInicio" class="inicio">
+
+    </section>
+
+    <!--RESULTADOS BUSCADOR-->
+
+    <div id="modalPoke" class="modalBuscador">
+      <div class="fondo">
+        <div class="contenido-modal-buscador">
+          <div id="circle">
+            <span class="closeBuscador" id="closePoke">&times;</span>
+          </div>
+          <div class="imagenPoke">
+            <img id="imgPoke">
+          </div>
+          <div id="fondoImagen"></div>
+          <img id="pokeball" src="https://imagenpng.com/wp-content/uploads/2016/09/Pokebola-pokeball-png-2.png">
+
+          <img id="cruz"
+            src="https://i.ibb.co/C554FCT/png-clipart-d-pad-nintendo-ds-xbox-one-controller-nintendo-3ds-nintendo-angle-rectangle.png">
+
+          <div class="contorno">
+          </div>
+          <div id="name">
+            <span id="namePoke">POKEMON NAME</span>
+          </div>
+          <div class="info">
+            <span id="about"></span>
+            <section id="caracateristicas">
+              <span>TIPO:</span>
+              <p id="tipo"></p>
+              <span>RESISTENCIA: </span>
+              <p id="resistencia"></p>
+              <span>DEBILIDAD:</span>
+              <p></p>
+              <p id="debilidad"></p>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--MENU DESPLEGABLE-->
+    <section id="pokeDesplegable" class="desplegable">
+
+    </section>
+  </main>
+  <footer class="footer">
+    <img id="footerImg" src="Footer.png">
+    <p id="masInformacion">Para conocer más visita <a href="https://www.pokemon.com/es/">Pokemon.es</a>
+    </p>
+  </footer>
+  <script src="main.js" type="module"></script>
+</body>
+</html>
